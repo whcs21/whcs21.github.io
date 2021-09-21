@@ -1,0 +1,117 @@
+<html>
+    <link rel="icon" href="whcs.png">
+    <body>
+        <title>WCHS</title>
+
+      <meta name="viewport" content="width=500, initial-scale=1.0"> 	
+ 
+        <div id="top_bar"> 
+            <button onclick="window.location.href='https://classroom.google.com/c/Mzk2MzQ4MTk0MjYx?cjc=5m7e2vb';" class="top_bar_buttons">Join</button>
+            <button onclick="window.location.href='about.html';" class="top_bar_buttons">About</button>
+            <button onclick="window.location.href='https://medium.com/@WatchungHillsCompSciClub';" class="top_bar_buttons">Blog</button>
+            <button onclick="window.location.href='team.html';" class="top_bar_buttons">Team</button>
+            <button onclick="window.location.href='index.html';" class="top_bar_buttons">Home</button>
+        </div>
+        <br><br><br>
+        <div id="section1">
+            <h1 style="font-size:60px" id="header1">WHRHS Computer Science Club</h1>
+            <p  style="font-size:30px" id="subheader1">Calling all Programmers from Novice to Expert!</p>
+            <p style="font-size:20px;width:50%" id="body1" >Build <span style="color:skyblue">AI chatbots</span>, <span style="color:lightgreen">mobile apps</span>, <span style="color:orchid">video games</span>, and more while learning new skills and meeting cool and intresting people.</p>
+            <p style="font-size:20px;width:50%" id="body1">What we do:</p>
+            <ul style="font-size:20px;width:50%">
+                <li>Build projects for the school</li>
+                <li>Build personal projects</li>
+                <li>Run workshops for younger students</li>
+                <li>Network with students and industry proffesionals</li>
+                <li>Learn new coding languages and strategies</li>
+                <li>Compete in coding competions</li>
+              </ul>  
+              <p style="font-size:20px;width:50%" id="body1">Meeting every Tuesday @ 1:30 in Rm.122</p>
+            <button onclick="window.location.href='https://classroom.google.com/c/Mzk2MzQ4MTk0MjYx?cjc=5m7e2vb';" id ="join_button">Join Now!</button>
+        </div>
+        <img src="whcs.png" id="image">
+        <div id="section5"><p id="psoultion">A Ryan Rana Site</p></div>
+        
+    </body>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #top_bar{
+        width:100%;
+        height:90px;
+        position:absolute;
+        background:white;
+        top:0;
+        left:0;
+        color:white;
+        z-index:7;
+        font-family:Arial;
+    }
+    .top_bar_buttons{
+        background:white;
+        border:none;
+        float:right;
+        color:black;
+        text-decoration: none;
+        margin-right:2%;
+        margin-top:2%;
+        font-size:17px;
+    }
+    .top_bar_buttons:hover{
+        text-decoration: underline;
+    }
+    #section1{
+        font-family:Arial;
+        padding-left:5%;
+        
+    }
+    #join_button{
+            
+            background-color: #dddddd; /* Green */
+            border-width: 4px;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            width:200px;
+            border: 4px solid black;
+
+        }
+        #section5{
+        text-align:center;
+        font-family:Arial;
+        padding-left:0%;
+        bottom:0%;
+        width:99%;
+        color:grey;
+        position:absolute;
+    
+    }
+    #image{
+        position: relative;
+        left:73%;
+        bottom:50%;
+        width:20%;
+    }
+    </style>
+    <script>
+        function updater(){
+         var color = "#" +Math.random().toString(16).slice(2, 8)
+        
+            document.getElementById("join_button").style.backgroundColor = color
+            setTimeout(updater,1000)
+        }
+        updater()
+
+    </script>
+
+
+</html>

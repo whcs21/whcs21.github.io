@@ -1,0 +1,103 @@
+<html>
+    <link rel="icon" href="whcs.png">
+    <body>
+        <title>WCHS</title>
+        <div id="top_bar"> 
+            <button onclick="window.location.href='https://classroom.google.com/c/Mzk2MzQ4MTk0MjYx?cjc=5m7e2vb';" class="top_bar_buttons">Join</button>
+            <button onclick="window.location.href='about.html';" class="top_bar_buttons">About</button>
+            <button onclick="window.location.href='https://medium.com/@WatchungHillsCompSciClub';" class="top_bar_buttons">Blog</button>
+            <button onclick="window.location.href='team.html';" class="top_bar_buttons">Team</button>
+            <button onclick="window.location.href='index.html';" class="top_bar_buttons">Home</button>
+        </div>
+        <br><br><br>
+        <div id="section1">
+            <h1 style="font-size:60px" id="header1">About</h1>
+ 
+        
+            <p style="font-size:20px;width:90%" id="body1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                
+                </p>
+            
+        </div>
+
+        
+    </body>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #top_bar{
+        width:100%;
+        height:90px;
+        position:absolute;
+        background:white;
+        top:0;
+        left:0;
+        color:white;
+        z-index:7;
+        font-family:Arial;
+    }
+    .top_bar_buttons{
+        background:white;
+        border:none;
+        float:right;
+        color:black;
+        text-decoration: none;
+        margin-right:2%;
+        margin-top:2%;
+        font-size:17px;
+    }
+    .top_bar_buttons:hover{
+        text-decoration: underline;
+    }
+    #section1{
+        font-family:Arial;
+        padding-left:5%;
+        
+    }
+    #join_button{
+            
+            background-color: #dddddd; /* Green */
+            border-width: 4px;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            width:200px;
+            border: 4px solid black;
+
+        }
+        #section5{
+        text-align:center;
+        font-family:Arial;
+        padding-left:0%;
+        bottom:0%;
+        width:99%;
+        color:grey;
+        position:absolute;
+    
+    }
+    </style>
+    <script>
+        function updater(){
+         var color = "#" +Math.random().toString(16).slice(2, 8)
+        
+            document.getElementById("join_button").style.backgroundColor = color
+            setTimeout(updater,1000)
+        }
+        updater()
+
+    </script>
+
+
+</html>
