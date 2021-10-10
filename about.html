@@ -1,0 +1,110 @@
+<html>
+    <link rel="icon" href="whcs.png">
+    <body>
+        <title>WCHS</title>
+        <div id="top_bar"> 
+            <button onclick="window.location.href='https://classroom.google.com/c/Mzk2MzQ4MTk0MjYx?cjc=5m7e2vb';" class="top_bar_buttons">Join</button>
+            <button onclick="window.location.href='about.html';" class="top_bar_buttons">About</button>
+            <button onclick="window.location.href='https://medium.com/@whrhscs';" class="top_bar_buttons">Blog</button>
+            <button onclick="window.location.href='team.html';" class="top_bar_buttons">Team</button>
+            <button onclick="window.location.href='index.html';" class="top_bar_buttons">Home</button>
+        </div>
+        <br><br><br>
+        <div id="section1">
+            <h1 style="font-size:60px" id="header1">About</h1>
+ 
+        
+            <p style="font-size:20px;width:90%" id="body1">
+                
+                Our club meets every Tuesday in Room 122. This year, we're going to be pursuing three concentrations:
+                <br><br>
+                1. Hackathon - every year, we organize the annual Hackathon (>80 participants in 2020), and this year we're going to be going back to a live event! Helping to organize the Hackathon can offer leadership experience, the opportunity to host your own workshops, speak and influence the local community.
+                <br><br>
+                2. Competitive Programming - we have a team of highly trained competitive programmers that are going to help you win at national/international competitions! This includes USACO, Google CodeJam, and ACSL! This will not only give you an oppuritunity to win awards and scholarships but it will put you in the same rooms with some of the best programmers in America.
+                <br><br>
+                3. Project Development - if you have any idea for a website, app, or any sort of coding project you want to make, you can come here and build it with a team of eager and ambitious programmers, designers, and more. You Showcase your projects at fairs, competitions, or even on the internet! You will be able to gain funding, scholarships, and oppurtunites to not only create but distribute your projects.
+
+
+                
+                </p>
+            
+        </div>
+
+        
+    </body>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #top_bar{
+        width:100%;
+        height:90px;
+        position:absolute;
+        background:white;
+        top:0;
+        left:0;
+        color:white;
+        z-index:7;
+        font-family:Arial;
+    }
+    .top_bar_buttons{
+        background:white;
+        border:none;
+        float:right;
+        color:black;
+        text-decoration: none;
+        margin-right:2%;
+        margin-top:2%;
+        font-size:17px;
+    }
+    .top_bar_buttons:hover{
+        text-decoration: underline;
+    }
+    #section1{
+        font-family:Arial;
+        padding-left:5%;
+        
+    }
+    #join_button{
+            
+            background-color: #dddddd; /* Green */
+            border-width: 4px;
+            border-radius: 12px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            width:200px;
+            border: 4px solid black;
+
+        }
+        #section5{
+        text-align:center;
+        font-family:Arial;
+        padding-left:0%;
+        bottom:0%;
+        width:99%;
+        color:grey;
+        position:absolute;
+    
+    }
+    </style>
+    <script>
+        function updater(){
+         var color = "#" +Math.random().toString(16).slice(2, 8)
+        
+            document.getElementById("join_button").style.backgroundColor = color
+            setTimeout(updater,1000)
+        }
+        updater()
+
+    </script>
+
+
+</html>
